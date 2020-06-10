@@ -1,0 +1,35 @@
+-> open : stdmode
+
+begin ->
+{
+   for:from year = 1900 to year <= 2100
+   {
+     if ( year % 4 == 0 )
+        {
+            if( year % 100 == 0 )
+            {
+                if ( year % 400 == 0 )
+                {
+                    out< Leap year
+                }
+                e
+                {
+                    out< Not Leap year
+                }
+ 
+            }
+            e
+            {
+                out< Not Leap year
+            }
+
+        }
+      e
+      {
+         out< Not Leap year
+      }
+
+      year = year + 1
+   }
+
+}
